@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Invoice voicing </title>
+
+    <style>
+        table, th, td {
+           border: 2px solid rgb(99, 3, 3); 
+    </style>
+</head>
+
+
+<body>   
+<form action="#">
+ <fieldset>
+        <title> Invoice voicing </title>
+        <form> Invoice Details</form>
+
+            <label> Invoice to</label> <input type="text">
+            <label> Contact #</label> <input type="text">
+            <label> Date </label> <input type="date">
+
+            <table style="width:100%;">
+                
+                <tr>
+                    <th> THINGS </th>
+                    <TH> PIECES </TH>
+                    <TH> PRICE PER PIECE </TH>
+                    <TH> AMOUNT </TH>
+
+                </tr>
+
+            <tr>
+                <td><textarea name="Description1" placeholder="Item Description"></textarea>  </td>
+                <td><input name="Piece1" type="number"> </td>
+                <td><input name="Priceperpiece1"> </td>
+                <td><input name="Amount1" type="number" </td>
+            </tr>
+
+            
+            <tr>
+                <td><textarea name="Description2" placeholder="Item Description"></textarea> </td>
+                <td><input name="Piece2" type="number"> </td>
+                <td><input name="Priceperpiece2"> </td>
+                <td><input name="Amount2" type="number" </td>
+            </tr>
+            
+            <tr>
+                <td><textarea name="Description3" placeholder="Item Description"></textarea> </td>
+                <td><input name="Piece3" type="number"> </td> 
+                <td><input name="Priceperpiece3"> </td>
+                <td><input name="Amount3" type="number"> </td>
+            </tr>
+            
+            
+            <tr>
+                <td><textarea name="Description4" placeholder="Item Description"></textarea> </td>
+                <td><input name="Piece4" type="number"> </td>
+                <td><input name="Priceperpiece4"> </td>
+                <td><input name="Amount4" type="number"> </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" style="text-align: right;"> Subtotal </td>
+                <td> <input type="number"> </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" style="text-align: right;">VAT 12%</td>
+                <td> <input type="number"> </td>
+            </tr>
+
+            <tr> 
+                <td colspan="3" style="text-align: right;">total</td>
+                <td> <input type="number"> </td>
+            </tr>
+            </fieldset>
+    </table>
+
+    <h3> Additional Information </h3>
+
+<label for="Payment Method"> Payment Method</label>
+                <select id="SelectPaymentMethod" name="paymentMethod">
+                <option value="">--Select Payment--</option>
+                        <option value="Credit Card"> Credit Card </option>
+                        <option value="Debit Card"> Debit Card </option>
+                        <option value="Payoneer"> Payoneer </option>
+                        <option value="Paypal"> Paypal </option>
+                        
+                </select>
+
+    <div> 
+        
+        <label for="Home"> Home </label> <input type="radio" name="DeliveryAddress" ID="Home">
+            <label for="Office"> Office </label> <input type="radio" name="DeliveryAddress" id="Office">
+
+     </div>
+             <textarea name="completeAddress" rows="2" cols="40" maxlength="500" placeholder="Address Information"></textarea>
+
+<div>
+    <input type="submit" value="Submit"
+
+    </div>
+             </form> 
+                
+</body>
+</html>
